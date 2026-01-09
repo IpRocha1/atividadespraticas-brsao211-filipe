@@ -1,8 +1,8 @@
 nome_do_produto = input("Digite o nome do produto: ")
 preco_original = float(input("Digite o preço original do produto (R$): "))
-desconto = 0.2  # 20% de desconto
+desconto = 20  # 20% de desconto
 
-desconto = preco_original * desconto
+desconto = preco_original * (desconto / 100)
 preco_final = preco_original - desconto
 
 print("Produto:", nome_do_produto)
